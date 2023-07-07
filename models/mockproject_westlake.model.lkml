@@ -30,4 +30,3 @@ explore: high_compliance {}
 explore: lowcompliance {}
 
 explore: medium_compliance {}
-
