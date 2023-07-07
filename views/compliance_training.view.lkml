@@ -2,31 +2,21 @@ view: compliance_training {
     sql_table_name: `Westlake_Mock_Dataset.complianceTrainingMoctData` ;;
 
     dimension: Violation_Reason_1 {
-      type: number
+      type: string
       sql: ${TABLE}.Violation_Reason_1 ;;
     }
   dimension: Violation_Reason_2 {
-    type: number
+    type: string
     sql: ${TABLE}.Violation_Reason_2 ;;
   }
   dimension: Violation_Reason_3 {
-    type: number
+    type: string
     sql: ${TABLE}.Violation_Reason_3 ;;
   }
 
 
 
-    measure: total___of_violations1 {
-      type: sum
-      sql: ${Violation_Reason_1} ;;  }
 
-  measure: total___of_violations2 {
-    type: sum
-    sql: ${Violation_Reason_2} ;;  }
-
-  measure: total___of_violations3 {
-    type: sum
-    sql: ${Violation_Reason_3} ;;  }
 
   dimension_group: Date_sent {
     type: time
