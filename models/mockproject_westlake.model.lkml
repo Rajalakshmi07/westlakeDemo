@@ -9,7 +9,7 @@ include: "/views/**/*.view.lkml"
 
 datagroup: mockproject_westlake_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "30 second"
 }
 
 persist_with: mockproject_westlake_default_datagroup
