@@ -32,3 +32,5 @@ explore: lowcompliance {}
 explore: medium_compliance {}
 
 explore: compliance_training {}
+
+explore: wl_sample_json_data {}
