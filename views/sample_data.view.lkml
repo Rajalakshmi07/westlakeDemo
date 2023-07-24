@@ -19,6 +19,9 @@ view: sample_data {
     type: string
     sql: ${TABLE}.agent_id ;;
   }
-
+  dimension: transcript {
+    type: string
+    sql: ${TABLE}.transcript ;;
+  }
 
 }
