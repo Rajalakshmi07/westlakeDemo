@@ -33,4 +33,10 @@ explore: medium_compliance {}
 
 explore: compliance_training {}
 
-explore: wl_sample_json_data {}
+explore: wl_sample_json_data {
+  join: sample_data {
+    type: left_outer
+    relationship: many_to_one
+    sql_on: ${wl_sample_json_data.guid}=${sample_data.guid}  ;;
+    }
+}
